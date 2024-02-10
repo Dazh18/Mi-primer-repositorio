@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="prueba.css">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Please fill out the survey below:</p>
+
+  <form id="survey-form">
+    <!-- Name Input -->
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" >
+
+    <!-- Email Input -->
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" >
+
+    <!-- Number Input -->
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number" placeholder="Enter a number" min="1" max="100" >
+
+    <!-- Dropdown Select -->
+    <label for="dropdown">Which option best describes your current role?:</label>
+    <select id="dropdown">
+      <option value="option1">Student</option>
+      <option value="option2">Full time job</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <label>Would you recommend us?:</label>
+    <input type="radio" name="radioGroup" value="optionA" id="radioA">
+    <label for="radioA">Maybe</label>
+    <input type="radio" name="radioGroup" value="optionB" id="radioB">
+    <label for="radioB">Definitely</label>
+
+    <!-- Checkboxes -->
+    <label>What do you think it is the most important(Select one or more options:)</label>
+    <input type="checkbox" value="checkbox1" id="checkbox1">
+    <label for="checkbox1">Company</label>
+    <input type="checkbox" value="checkbox2" id="checkbox2">
+    <label for="checkbox2">Community</label>
+
+    <!-- Textarea -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+  <script>
+    var formElem = document.querySelector('form');
+    formElem.addEventListener("formdata", (e) => {
+      console.log("formdata fired");
+
+
+      // Get the form data from the event object
+      const data = e.formData;
+      for (const value of data.values()) {
+        alert(value);
+      }
+    });
+  </script>
+
+</body>
+</html>

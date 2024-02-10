@@ -1,0 +1,209 @@
+<html>
+    <head>
+    <title>Héctor Azócar primera practica</title>
+    <meta charset="utf-8"> 
+    <style>
+        body {background-color: rgb(168, 135, 135);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+        .link {color: red;} 
+        .link:hover {outline: 5px solid aqua;}
+        a:hover {color:red}
+        legend {color: aqua}
+        ul {list-style:inside;}
+        h1 {border-style: dashed; border-radius: 5cqmax; 
+            background-color: rgba(114, 6, 82, 0.705); text-align: center} 
+        h2 {border-style: dashed; border-radius: 5cqmax; 
+            background-color: rgba(114, 6, 82, 0.705); text-align: center} 
+        h2 {background-color: rgba(114, 6, 82, 0.705);
+            background-color: rgba(114, 6, 82, 0.705); text-align: center} 
+        h2 {background-color: rgba(114, 6, 82, 0.705);
+            background-color: rgba(114, 6, 82, 0.705); text-align: center}     
+        h3 {border-style: dashed; border-radius: 5cqmax; 
+            background-color: rgba(114, 6, 82, 0.705); text-align: center} 
+        fieldset {background-color: rgba(114, 6, 24, 0.705);}
+        summary:hover {color: blue;}
+        video{position: relative; right: -390;}
+        .foto{position: absolute; top: 565; left: 550; border-radius: 100%}
+        footer{font-size: 20px;}
+        button {background-color:aqua}
+        
+    </style>
+    <meta name="viewport" content="widt=device-widt"> 
+    <meta name="description" content="Portafolio de practica para principiantes">
+    <meta property="og:title" content="Portafolio de practica">
+    <meta property="og:description" content="Portafolio de practica">
+    <meta property="og:image" content="/Downloads/yo.jpg" src="/Downloads/yo.jpg">
+    <meta property="og:image:alt" content="Foto de Héctor">
+
+    </head>
+    <body>
+        
+        <h1>Hector Azocar primera practica</h1>
+        <nav>
+            <a class="link" href="#experiencia">Experiencia</a>
+            <a class="link" href="#habilidades">Habilidades</a>
+        </nav>
+
+
+        <p> Venezolano con experiencia <strong >Bilingue.</strong> Habla ingles con fluidez y estudia frances, buscando siempre la mejor forma de ser mejor, personal y profesionalmente. </p>
+        <p class="video2"><strong>"Nota sin sentido o contexto, me gustaria algún dia visitar lugares como los de este video"</strong></p>
+
+        <video autoplay 
+        loop height="300" width="500"
+         muted 
+        src="Downloads/Video.mp4"></video>
+        
+        <h2 id="experiencia">Experiencia</h2>
+        
+        <ol> 
+            <li>Aprendiz de programador - 2023</li>
+            <li>Recepcionista - 2023</li>
+            <li>Director de eventos infantiles - 2022</li>
+            <li>Recreador - 2022</li>
+            <li>Vendedor de Donas - 2022</li>
+            <li>Vendedor Ejecutivo - 2021</li>
+            <li>Encargado de tienda - 2020</li>
+            <li>Repositor de mercaderia - 2019</li>
+        </ol>
+        
+        <a  download href="/Downloads/yo.jpg">
+            <img class="Foto"
+        title="Foto de Héctor"
+        height="180" 
+        width="180"
+        alt="Foto tipo CV de Héctor Azócar"  
+        src="/Downloads/yo.jpg" /> 
+        </a>
+        <h2 id="habilidades" >Habilidades</h2>
+        
+        <ul> 
+            <li>Resolución de conflictos.
+                <progress  max="100" value="100"></progress></li>
+            <li>Rápido aprendizaje.
+                <progress  max="100" value="95"></progress></li>
+            <li>Buena presencia.  
+                <progress max="100" value="95"></progress></li>
+            <li>Comprensión de lenguas extranjeras. 
+                <progress max="100" value="80"></progress></li>
+        </ul>
+    <h3>Objetivo</h3>
+    <p>Aprender todo lo posible sobre programación en el menor tiempo posible.
+    </p>
+<section>
+    <article>
+        <header>
+            <h3>La imagen de Hipo</h3>
+            <img style="width:100%; aspect-ratio: 720*800;"
+            src="/Downloads/Hipo.jpg" alt="150">
+
+        </header>
+    </article>
+
+</section>
+
+    <h3>Preguntas frecuentes</h3>
+    <details>
+        <summary>Estudios Realizados</summary>
+        <p>Estudie en la Universidad Maritima del Caribe ingeniería marítima durante 5 años</p>
+    </details>
+    <details>
+        <summary>Lenguaje Favorito</summary>
+        <p>Por el momento es CSS</p>
+    </details>
+    <details>
+        <summary>Aficiones</summary>
+        <p>Entre mis aficiones se encuentran, el cine, la música y el fútbol.</p>
+    </details>
+   <h3>Formulario de contacto</h3>
+   <form method="post" action='/'>
+    <fieldset>
+
+        <div>
+        <legend><strong>Información personal</strong></legend>
+        <label for="name">Nombre:
+            <input
+            id="name"
+            type="text" 
+            name="name"
+            required
+            placeholder="Héctor Azócar">
+        </label>
+        </div>
+        <label for="Email">Email: 
+            <input
+            required
+            id="Email"
+            type="email"
+            name="Email"
+            placeholder="azocardavid26@gmail.com">
+        </label>
+    </fieldset>
+    <fieldset>
+        <div>
+        <legend><strong>Información adicional</strong></legend>
+        <label for=Teléfono> Teléfono:
+            <input 
+            required
+            id="Teléfono"
+            type="tel"
+            pattern="[0-9]{9}" 
+            name="Teléfono"
+            placeholder="+5468495856">
+        </label></div>
+    </fieldset>
+    <fieldset>
+        <div>
+        <legend><strong>Otros</strong></legend>
+        
+            <datalist id=Languages>
+                <option value="Javascript"></option>
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+            </datalist>
+        <div>
+            <label for="why"> Por qué quieres contactar?
+                <select name="why" id="why">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Dudas</option>
+                    <option value="3">Más información</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>Con qué lenguaje quieres que te ayude?
+            <input list="Languages" name="Languages">
+            </label>
+        </div>
+        <button>Enviar información</button>
+           
+        
+    </fieldset>
+   </form>
+
+    </body>
+      <footer>
+        Copyright 2023 - Primera práctica 
+        <header>
+            <a href="mailto:azocardavid26@gmail.com">Enviame un correo</a>
+            <a href="tel:+5468498586">Llamar por Teléfono</a>
+            <a href="whatsapp://send?+5468498586text=hola Hector">Escribir al whatsapp</a>
+        </header>
+       
+        
+
+      </footer>  
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

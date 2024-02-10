@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="piedra-papel-tijeras.css">
+  <title>Rock - Paper - Scissors</title>
+</head>
+<body>
+  <header>
+    <h1>Rock - Paper - Scissors</h1>
+  </header>
+  <div class="score-board">
+    <div id="comp-label" class="badge">Comp</div>
+    <div id="user-label" class="badge">User</div>
+    <span id="user-score">0</span>:<span id="computer-score">0</span>
+  </div>
+  <div class="result">
+    <p>Paper covers rocks, You Win!!</p>
+  </div>
+  <div class="choices">
+    <div class="choice">
+      <img src="/rock.png" alt="Roca" width="100" id="r">
+    </div>
+    <div class="choice">
+        <img src="/papel.png" alt="Paper" width="100" id="p">
+      </div>
+      <div class="choice">
+        <img src="/tijeras.png" alt="Scissors" width="100" id="s">
+      </div>
+  </div>
+  
+  <p id="action-message">Make your move.</p>
+  
+  <script src="ppt.js" charset="utf-8"></script>
+</body>

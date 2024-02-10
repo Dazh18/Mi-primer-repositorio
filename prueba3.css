@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    margin: 0;
+    background-color: black;
+    color:antiquewhite
+  }
+  
+  #navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1; /* Añade un índice z alto para estar por encima del contenido */
+  }
+  
+  #navbar header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .main-section {
+    padding: 20px;
+    margin-left: 250px; /* Ajusta el margen según el ancho del menú de navegación */
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho total del elemento */
+  }
+  
+  /* Estilo para los enlaces de navegación */
+  .nav-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transition(0.3s); /* Agrega una transición suave para la animación de color */
+  }
+  
+  /* Estilo para los enlaces de navegación activos */
+  .nav-link:hover,
+  .nav-link:active {
+    background-color: #555;
+  }
+  
+  /* Estilo para mejorar la legibilidad de las secciones */
+  .main-section header {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .main-section p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Añade reglas de estilo adicionales según sea necesario */
+  
+  /* Agrega media query para el diseño receptivo */
+  @media screen and (max-width: 768px) {
+    #navbar {
+      display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+    }
+  
+    .main-section {
+      margin-left: 20px; /* Ajusta el margen en pantallas más pequeñas */
+    }
+  }
+
+  .Historia{
+    background-image: url(final.jpeg);
+    background-size: 50%;
+  }
+
+  .videos{
+    background-size: 50%;
+    color:rgb(247, 242, 242);
+    background-image: url(final.jpeg);
+  }
+  
