@@ -81,18 +81,4 @@ function main() {
     scissors_div.addEventListener('click',  () => game("s"))
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const choices = document.querySelectorAll('.choice');
-
-    choices.forEach(choice => {
-        choice.addEventListener('click', function () {
-            // Remove the 'clicked' class from all choices
-            choices.forEach(c => c.classList.remove('choice.clicked'));
-
-            // Add the 'clicked' class to the clicked choice
-            this.classList.add('clicked');
-        });
-    });
-});
-
 main();

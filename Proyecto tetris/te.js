@@ -1,10 +1,11 @@
+console.log("hello word")
 document.addEventListener('DOMContentLoaded', () =>  {
 
-const grid = document.querySelector('.grid')
-let squares = Array.from(grid.querySelectorAll('div'))
-const width = 10
-const height = 20  
-let currentPosition = 4
+const grid = document.querySelector('.grid');
+let squares = Array.from(grid.querySelectorAll('div'));
+const width = 10;
+const height = 20;
+let currentPosition = 4;
 
   function control(e){
     if(e.keyCode === 39){
@@ -17,7 +18,8 @@ let currentPosition = 4
         moveDown()
     }
   }
-  document.addEventListener('keyup', control)
+
+  document.addEventListener('keyup', control);
 
 
 //The tetrominoes
@@ -52,7 +54,7 @@ let currentPosition = 4
     [width, width+1, width+2, width+3]
   ]
 
-  const theTetrominoes = [lTetrominoes, zTetrominoes, tTetrominoes, oTetrominoes, iTetrominoes]
+const theTetrominoes = [lTetrominoes, zTetrominoes, tTetrominoes, oTetrominoes, iTetrominoes];
 
 
 //Ramdonly 
@@ -121,19 +123,16 @@ function draw() {
     }
     current = theTetrominoes[random][currentRotation]
     draw()
-  }
+  };
 
 
-  const displayWidth = 4
-  const displayIndex = 0
+  const displayWidth = 4;
+  const displayIndex = 0;
 
   const smallTetrominoes = [
     [1, displayWidth + 1]
-  ]
+  ];
 
 
 
-}
-
-
-)
+});
