@@ -31,12 +31,12 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.mensaje{
+#mensaje{
     border-radius: 4px;
     background-color: aqua;
     width: 200px;
     height: 200px;
-    color: rgb(53, 13, 54);
+    color: rgb(12, 8, 12);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 3;

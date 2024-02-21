@@ -161,6 +161,7 @@ function draw() {
     displayShape()
     gameOver()
     addScore()
+    document.getElementById('mensaje').innerText = mensaje();
   }
  })
 
@@ -212,11 +213,26 @@ function draw() {
         const squaresRemoved = squares.splice(currentIndex, width)
         squares = squaresRemoved.concat(squares)
         squares.forEach(cell => grid.appendChild(cell))
+        document.getElementById('mensaje').innerText = mensaje();
       }
     }
   }
-  
 
+  const atexto = ["Lo estas haciendo genial😲"];
+  const btexto = ["¡Impresionante! 🤩"];
+  const ctexto = ["¡Increíble! 😎"];
+
+  const textos = [atexto, btexto, ctexto];
+
+  function mensaje() {
+    let aleat = 0;
+    if (score >= 10) {
+      console.log("hola")
+      aleat = Math.floor(Math.random() * textos.length);
+      return textos[aleat];
+    }
+  return "...";
+  }
   
 displayShape()
 
